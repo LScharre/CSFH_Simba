@@ -5,7 +5,6 @@ Created on Mon Aug 26 14:55:39 2024
 
 @author: luciescharre
 """
-
 import caesar
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,11 +12,9 @@ import matplotlib as mlp
 from scipy.ndimage.filters import gaussian_filter
 from matplotlib.offsetbox import AnchoredText
 
-
 model = 'm50n512'
 size = 50
-data_cat = '/Users/luciescharre/Downloads/MPhys/data_scripts polished/cats/'
-
+data_cat = #folder with sub folders 'noagn','nojet','nox','7jk' with respective Simba galaxy catalogues
 
 #%%
 
@@ -32,7 +29,7 @@ plt.rc('legend', fontsize=10)            # legend fontsize
 plt.rc('figure', titlesize=10)  # fontsize of the figure title
 
 
-def sSFR_mStar_subplots_8x2(model, snaps,size, fb_fols, fb_types):
+def sSFR_mStar_subplots(model, snaps, size, fb_fols, fb_types):
         fig, ax = plt.subplots(nrows=2, ncols=2)
         plt.subplots_adjust(wspace=0, hspace=0)
         fig.set_size_inches(10,13)
@@ -262,10 +259,9 @@ def sSFR_mStar_subplots_8x2(model, snaps,size, fb_fols, fb_types):
 
 fb_fols  = ['noagn','nojet','nox','7jk']            
 fb_types = ['No-AGN','No-jet','No-X-ray', 'Simba-50']
-          
       
 snaps = [151] 
-sSFR_mStar_subplots_8x2(model, snaps,size, fb_fols, fb_types)        
+sSFR_mStar_subplots(model, snaps,size, fb_fols, fb_types)        
 
 snaps = [78] 
-sSFR_mStar_subplots_8x2(model, snaps,size, fb_fols, fb_types) 
+sSFR_mStar_subplots(model, snaps,size, fb_fols, fb_types) 
