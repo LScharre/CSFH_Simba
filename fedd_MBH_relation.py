@@ -16,7 +16,7 @@ from matplotlib.offsetbox import AnchoredText
 model = 'm50n512'
 size = 50
 
-data_cat = '/Users/luciescharre/Downloads/MPhys/data_scripts polished/cats/'
+data_cat = #folder with sub folders 'noagn','nojet','nox','7jk' with respective Simba galaxy catalogues
 
 #%%
 
