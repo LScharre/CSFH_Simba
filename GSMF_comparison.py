@@ -18,14 +18,11 @@ from matplotlib.lines import Line2D
 model = 'm50n512'
 size = 50
 colors = ['orange','darkmagenta','dodgerblue', 'tomato',  'seagreen' ]
-fb_fols  = ['nofb','noagn','nojet','nox','7jk']  
-fb_types= [ 'no fb',  'stellar','AGN winds', 'jets','x-ray']  
-fb_types = ['Simba-100','No-X-ray','No-jet',  'No-AGN', 'No-feedback']
 
 snaps = [50,78,104,151]
 
 
-data_cat = #folder with sub folders 'noagn','nojet','nox','7jk' with respective Simba galaxy catalogues
+data_cat = #folder with sub folders 'nofb', 'noagn','nojet','nox','7jk' with respective Simba galaxy catalogues
 
 #%% computation functions
 
