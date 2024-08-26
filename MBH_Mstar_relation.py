@@ -20,6 +20,7 @@ colors = ['orange','darkmagenta','dodgerblue', 'tomato',  'seagreen' ]
 snaps = [151]  
 model = 'm50n512'
 size = 50
+data_cat = #folder with sub folders 'nofb' 'noagn','nojet','nox','7jk' with respective Simba galaxy catalogues
 
 MEDIUM_SIZE = 15
 BIGGER_SIZE = 12
@@ -43,7 +44,7 @@ for j in range(len(snaps)):
         fb_fol = fb_fols[i]
     
         snap = snaps[j]
-        infile = f'/Users/luciescharre/Downloads/MPhys/data_scripts polished/cats/{fb_fol}/{model}_{snap:03d}.hdf5'
+        infile = f'{data_cat}{fb_fol}/{model}_{snap:03d}.hdf5'
         sim = caesar.load(infile)
         
         h = sim.simulation.hubble_constant    
@@ -120,4 +121,4 @@ for j in range(len(snaps)):
     
     
     #plt.gcf().text(0.78, 0.8, f'$z = {int(z_round)}$', fontsize=25)
-    fig.savefig(f'/Users/luciescharre/Downloads/MPhys/data_scripts polished/BH_mass_stellar_mass_{z_round}.pdf', bbox_inches='tight', dpi=1200)
+    fig.savefig(f'BH_mass_stellar_mass_{z_round}.pdf', bbox_inches='tight', dpi=1200)
